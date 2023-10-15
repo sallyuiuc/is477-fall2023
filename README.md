@@ -11,6 +11,5 @@ step2:  FROM python:3.7
         CMD python main.py
 
 step3:
-
 docker build -t image-name .
 docker run image-name
