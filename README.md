@@ -4,7 +4,7 @@
 A NEW REPRODUCING SECTION
 step1: git clone https://github.com/sallyuiuc/is477-fall2023
 
-step2:
+step2: 
 FROM python:3.7
 COPY. /app
 WORKDIR /app
