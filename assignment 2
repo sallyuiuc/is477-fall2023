@@ -58,3 +58,31 @@ def main():
         f.write(csv_hash)
 
     print("Data downloaded and verified successfully.")
+
+# To verify the integrity of the files (as demonstrated in Lab 3) you will need to: 
+# 01- Manually calculate the SHA-256 for each file you download
+# 02-Store the hash
+# 03-During the automatic download in Step 2, recalculate the hash and compare it with the stored version.
+
+# 01-original SHA-256 d11fe30213d36434a0879aab7cb00ce3c812eb7ba2495874438abff7b7b762e9 
+
+# 02-Using requests 
+import requests
+import os
+url = 'https://archive.ics.uci.edu/dataset/53/iris.zip'
+response = requests.get(url)
+if not os.path.exists('data'):
+    os.mkdir('data')
+with open('data/iris.zip', mode='wb') as f:
+    f.write(response.content)
+# 03-using hashlib
+import hashlib
+with open('data/iris.zip', mode='rb') as f:
+    data = f.read()
+    sha256hash = hashlib.sha256(data).hexdigest()
+    print(sha256hash)
+uci_iris_sha256 = 'd11fe30213d36434a0879aab7cb00ce3c812eb7ba2495874438abff7b7b762e9'
+if uci_iris_sha256 != sha256hash:
+    print("Computed hash does not match expected hash")
+else:
+    print("Computed hash matches expected hash")
