@@ -1,0 +1,6 @@
+sw_vers ((MacOS version 13.3 (22E252))
+python -3.11.4 (main, Jul  5, 2023, 08:54:11)
+pip freeze
+pip freeze > requirements.txt
+$ pip install pipreqs
+$ pipreqs /is477-fall2023/data/assignment-2
