@@ -10,7 +10,7 @@ adult_csv_url = "https://raw.githubusercontent.com/socialfoundations/folktables/
 # File paths for downloaded data and files
 data_dir = "data"
 zip_file_path = os.path.join(data_dir, "adult.zip")
-csv_file_path = os.path.join(data_dir, "adult_reconstruction.csv")
+csv_file_path = os.path.join(data_dir, "folktables", "adult_reconstruction.csv")
 zip_hash_file = os.path.join(data_dir, "adult_zip_hash.txt")
 csv_hash_file = os.path.join(data_dir, "adult_csv_hash.txt")
 
