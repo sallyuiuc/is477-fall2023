@@ -1,6 +1,12 @@
-Data Availability
-Origin of Datasets
+IS477 Reproduction of UCI Adult DATABASE
 
+Overview
+
+This is assignment 1 for the IS477 course Data Management Curation and Reproducibility. To make sure the study results are correct, the project will use a normal logistic regression model on two sets of data: the original UCI Adult dataset and the rebuilt version of the dataset that is shown in the paper. The project wants to see how fair and accurate machine learning models are when it is making predictions about people from different groups. For machine learning and data processing, we will use Python 3.0 to run the dataset. This repository serves to reproduce specific results from the paper"Retiring Adult: New Dataset for Fair Machine Learning." For version control and code management, we will use Git and Github desktop applications. Results include the model's performance measures, datasets that have been cleaned and preprocessed,well-documented code, and a detailed README that can be used again and again.
+
+Data Availability
+
+Origin of Datasets
 1.UCI Adult Dataset: This dataset was obtained from the UCI Machine Learning Repository. Becker, Barry and Kohavi, Ronny(1996). Adult. UCI Machine Learning Repository
 https://archive.ics.uci.edu/static/public/2/adult.zip 
 
@@ -8,11 +14,11 @@ https://archive.ics.uci.edu/static/public/2/adult.zip
 https://raw.githubusercontent.com/socialfoundations/folktables/main /adult_reconstruction.csv
 
 Copyright and Licensing
+
 UCI Adult Dataset The dataset is generally available for public use for educational and research purposes.This dataset is licensed under a Creative Commons Attribution 4.0 International CCBY 4.0 license.
 Reconstructed Dataset The data itself is governed by the terms of use provided by the Census Bureau. The data are intended for replication purposes only. Individuals analyzing the data for other purposes must submit a separate data extract request directly via IPUMS CPS. Individuals are not to redistribute the data without permission.
 
 Justification for Inclusion/exclusion of Datasets
-
 Including the reconstructed dataset directly in this repository because this dataset are only intended for replication purpose due to copyright considerations
 
 Data License
@@ -35,7 +41,6 @@ To return the data preparation script:
 clone this repository
 if you have docker installed run the following:
 docker run–rm -v${PWD}:/IS477 username/is477-fall2023 python prepare_data.py
-
 
 Prerequisites
 Ensure you have Python 3.x installed on your machine.If you decide to use Docker Install Docker Desktop on your machine.Create a Docker Hub account if you dont already have one.
