@@ -60,3 +60,14 @@ To compare the results of your reproduction with the original paper, you should 
 b. Do the regression results using the reconstructed data with the default threshold match the results of the regression using the original UCI Adult data?
 
 In this section, summarize the results obtained from running reproducing_reconstruction.py with the default threshold. Compare these results to those obtained from running reproducing_adult.py (original UCI Adult data). Analyze whether the accuracy results with the reconstructed data match those of the original UCI Adult data. Discuss any similarities or differences you observe.
+
+References: 
+Ding,F,Hardt,M.,Miller,J.& Schmidt,L(2022).Retiring Adult:New Datasets for Fair Machine Learning arXiv. https://archive.ics.uci.edu/static/public/2/adult.zip 
+Becker,Barry and Kohavi,Ronny.(1996).Adult.UCI Machine Learning Repository.https://doi.org/10.24432/C5XW20
+Moore, R. W. (2018). Digital Archives and Preservation. In L. Liu & M. T. Özsu (Eds.), Encyclopedia of Database Systems (pp. 1071–1077). Springer.
+Rosenthal, D. S. H., Robertson, T., Lipkis, T., Reich, V., & Morabito, S. (2005). Requirements for Digital Preservation Systems: A Bottom-Up Approach. D-Lib Magazine, 11(11).
+Gray, J., Szalay, A. S., Thakar, A. R., Stoughton, C., & vandenBerg, J. (2002). Online scientific data curation, publication, and archiving. Virtual Observatories, 4846.
+
+
+
+
