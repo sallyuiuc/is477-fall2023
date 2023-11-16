@@ -3,7 +3,7 @@ from utils import run_regression
 
 # read the source data
 
-reconstruced_data = pd.read_csv('./Data/folkables/adults_reconstruction.csv',sep=',',engine='python')
+reconstructed_data = pd.read_csv('./Data/folkables/adults_reconstruction.csv',sep=',',engine='python')
 
 
 # The following will be converted to dumny variables for regression
